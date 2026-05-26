@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leondra's Wolkaboutertjes | Heritage Sheep & Wool</title>
+  <meta name="description" content="Leondra's Wolkaboutertjes breeds Valais Blacknose, Babydoll and rare Elliottdale sheep with a focus on care, heritage and beautiful wool." />
+  <style>
+    :root {
+      --cream: #f7f0e3;
+      --warm-white: #fffaf2;
+      --sand: #dfc8a5;
+      --clay: #b9825b;
+      --olive: #7d8060;
+      --sage: #a8b59a;
+      --forest: #3f4d37;
+      --moss: #53583d;
+      --charcoal: #2f2a24;
+      --soft-brown: #6d5846;
+      --border: #d8c7ad;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: var(--cream);
+      color: var(--charcoal);
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255, 250, 242, 0.95);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(8px);
+    }
+
+    .nav {
+      max-width: 1600px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-placeholder {
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--forest), var(--olive));
+      border: 2px solid var(--sand);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 20px rgba(47, 42, 36, 0.15);
+    }
+
+    .hero-logo {
+      width: 160px;
+      height: 150px;
+      border-radius: 50%;
+      background: linear-gradient(180deg, rgba(255,250,242,0.96) 0%, rgba(232,238,225,0.92) 100%);
+      border: 3px solid rgba(63,77,55,0.78);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.22);
+      color: var(--forest);
+    }
+
+    .hero-logo::before {
+      content: "♈";
+      font-size: 1.7rem;
+      line-height: 1;
+      margin-bottom: 0.25rem;
+      opacity: 0.9;
+    }
+
+    .hero-logo strong {
+      font-size: 3rem;
+      letter-spacing: 0.1em;
+      color: var(--forest);
+      line-height: 1;
+    }
+
+    .hero-logo small {
+      color: var(--forest);
+      letter-spacing: 0.18em;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      margin-top: 0.4rem;
+    }
+
+    .logo-placeholder span {
+      color: var(--warm-white);
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.35rem;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .nav-links > a,
+    .dropdown > a {
+      display: flex;
+      align-items: center;
+      height: 42px;
+      padding: 0 0 0.25rem;
+      border-bottom: 2px solid transparent;
+    }
+
+    .nav-links > a:hover,
+    .dropdown > a:hover {
+      border-bottom-color: var(--forest);
+    }
+
+    .nav-links a:hover {
+      color: var(--clay);
+    }
+
+    .dropdown {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .dropdown > a::after {
+      content: "▾";
+      font-size: 0.7rem;
+      margin-left: 0.35rem;
+      position: relative;
+      top: -1px;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 220px;
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 0.6rem;
+      box-shadow: 0 14px 35px rgba(47, 42, 36, 0.12);
+    }
+
+    .dropdown-menu a {
+      display: block;
+      padding: 0.65rem 0.8rem;
+      border-radius: 10px;
+      white-space: nowrap;
+    }
+
+    .dropdown-menu a:hover {
+      background: var(--cream);
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .hero {
+      min-height: 78vh;
+      display: grid;
+      place-items: center;
+      padding: 5rem 1.25rem;
+      background:
+        linear-gradient(rgba(32, 45, 28, 0.52), rgba(47, 42, 36, 0.48)),
+        var(--moss);
+      color: var(--warm-white);
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 820px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--sand);
+      display: block;
+    }
+
+    h1 {
+      font-size: clamp(3.2rem, 8vw, 6.2rem);
+      line-height: 1.05;
+      margin-bottom: 1rem;
+      text-align: center;
+      max-width: 900px;
+    }
+
+    .hero p {
+      font-size: clamp(1.05rem, 2vw, 1.35rem);
+      max-width: 720px;
+      margin: 0 auto 1.2rem;
+      text-align: center;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 0.8rem 1.25rem;
+      border-radius: 999px;
+      background: var(--forest);
+      color: var(--warm-white);
+      font-weight: 700;
+      border: 1px solid var(--forest);
+    }
+
+    .button.secondary {
+      background: transparent;
+      border-color: var(--warm-white);
+    }
+
+    section {
+      padding: 5rem 1.25rem;
+    }
+
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .section-heading {
+      max-width: 720px;
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.1;
+      color: var(--moss);
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.45rem;
+      color: var(--moss);
+      margin-bottom: 0.6rem;
+    }
+
+    .muted {
+      color: var(--soft-brown);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 14px 35px rgba(47, 42, 36, 0.08);
+    }
+
+    .card-content {
+      padding: 1.4rem;
+    }
+
+    .card img,
+    .image-panel {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      background: var(--sand);
+    }
+
+    .feature-list {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .feature {
+      background: var(--warm-white);
+      border-left: 5px solid var(--olive);
+      padding: 1.2rem;
+      border-radius: 16px;
+    }
+
+    .faq-list {
+      display: grid;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    details {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 1rem 1.2rem;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 700;
+      color: var(--moss);
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details p {
+      margin-top: 0.8rem;
+      color: var(--soft-brown);
+    }
+
+    section {
+      position: relative;
+      overflow: hidden;
+    }
+
+    section::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -1px;
+      height: 60px;
+      background: radial-gradient(circle at 50% -20px, transparent 60px, rgba(247,240,227,0.9) 61px);
+      opacity: 0.35;
+      pointer-events: none;
+    }
+
+    .highlight-band {
+      background: linear-gradient(180deg, #ede2d0 0%, #dfe7d7 100%);
+    }
+
+    .highlight-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .highlight-card {
+      background: var(--warm-white);
+      border-radius: 20px;
+      padding: 1.5rem;
+      border: 1px solid var(--border);
+      box-shadow: 0 12px 30px rgba(47, 42, 36, 0.08);
+    }
+
+    .value-strip {
+      padding: 2.5rem 1.25rem;
+      background: linear-gradient(180deg, #f3eddf 0%, #dfe7d7 100%);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .value-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      text-align: center;
+    }
+
+    .value-item {
+      padding: 0 1rem;
+      border-right: 1px solid rgba(83, 88, 61, 0.25);
+    }
+
+    .value-item:last-child {
+      border-right: 0;
+    }
+
+    .value-icon {
+      font-size: 2rem;
+      color: var(--forest);
+      margin-bottom: 0.6rem;
+    }
+
+    .value-item h3 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .value-item p {
+      color: var(--soft-brown);
+      font-size: 0.95rem;
+    }
+
+    .earth-band {
+      background: linear-gradient(180deg, var(--moss) 0%, var(--forest) 100%);
+      color: var(--warm-white);
+    }
+
+    .earth-band h2,
+    .earth-band h3 {
+      color: var(--sand);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+
+    .gallery-grid img {
+      height: 220px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      background: var(--sand);
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .news-date {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--clay);
+      margin-bottom: 0.6rem;
+    }
+
+    .contact-box {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 2rem;
+    }
+
+    form {
+      display: grid;
+      gap: 1rem;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: #fff;
+      font: inherit;
+    }
+
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    button {
+      border: 0;
+      cursor: pointer;
+      font: inherit;
+    }
+
+    footer {
+      background: var(--charcoal);
+      color: var(--warm-white);
+      padding: 2rem 1.25rem;
+      text-align: center;
+    }
+
+    footer p {
+      color: var(--sand);
+    }
+
+    @media (max-width: 1250px) {
+      .nav-links {
+        gap: 1rem;
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .nav {
+        padding: 1rem;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .grid-2,
+      .cards,
+      .news-grid,
+      .highlight-grid,
+      .value-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    
+
+    @media (max-width: 520px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links {
+        gap: 0.75rem;
+        font-size: 0.9rem;
+      }
+
+      .hero-logo {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav" aria-label="Main navigation">
+      <div class="nav-links">
+        <a href="#about">About Us</a>
+        <div class="dropdown">
+          <a href="#sheep">Meet the Flock</a>
+          <div class="dropdown-menu">
+            <a href="#valais-blacknose">Valais Blacknose</a>
+            <a href="#babydolls">Babydolls</a>
+            <a href="#elliottdale">Elliottdale</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#care">Sheep Care</a>
+          <div class="dropdown-menu">
+            <a href="#general-care">General Care</a>
+            <a href="#preparing-for-sheep">Preparing for Your Sheep</a>
+            <a href="#lambing">Lambing</a>
+            <a href="#vaccinations">Vaccinations</a>
+            <a href="#sheep-health">Sheep Health</a>
+            <a href="#faq">FAQ</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#wool">Our Wool</a>
+          <div class="dropdown-menu">
+            <a href="#raw-fleece">Raw Fleece</a>
+            <a href="#breed-fibre">Breed Fibre</a>
+            <a href="#wool-journey">Wool Journey</a>
+            <a href="#future-products">Future Products</a>
+          </div>
+        </div>
+        <a href="#registration">Registration</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#journal">Farm Journal</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-content">
+        
+        <div class="hero-logo">
+          <strong>LW</strong>
+          <small>Heritage Sheep</small>
+        </div>
+        <p class="eyebrow">Boutique sheep breeding & wool</p>
+        <h1>Leondra's Wolkaboutertjes</h1>
+        <p><strong>Beautiful sheep, thoughtful breeding and naturally grown wool.</strong></p>
+        <p>Home to Valais Blacknose, Babydoll and rare Elliottdale sheep, bred with care, character and respect for heritage, health and wool quality.</p>
+        <div class="button-row">
+          <a class="button" href="#sheep">Meet the Flock</a>
+          <a class="button secondary" href="#contact">Make an Enquiry</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="value-strip" aria-label="Farm values">
+      <div class="container value-grid">
+        <div class="value-item">
+          <div class="value-icon">☘</div>
+          <h3>Natural & Sustainable</h3>
+          <p>Raised with care for the land, the animals and future generations.</p>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">♈</div>
+          <h3>Heritage Breeds</h3>
+          <p>Preserving rare and distinctive breeds known for beauty, character and fibre.</p>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">◌</div>
+          <h3>Quality Fibre</h3>
+          <p>Natural fleece with softness, strength and individual breed qualities.</p>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">〽</div>
+          <h3>Pasture Raised</h3>
+          <p>Healthy sheep, open paddocks and practical care through the seasons.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container grid-2">
+        <div>
+          <p class="eyebrow">About us</p>
+          <h2>A small flock with a big heart.</h2>
+          <p class="muted">We are building a boutique sheep breeding program focused on distinctive breeds, gentle temperaments and high-quality fleece. Our approach is simple: healthy animals, calm handling, considered breeding and honest communication with future owners.</p>
+          <br />
+          <p class="muted">Whether you are looking for beautiful pet sheep, rare heritage genetics or naturally grown wool, we aim to raise sheep that are well cared for from day one.</p>
+        </div>
+        <div class="image-panel" aria-label="Farm image placeholder"></div>
+      </div>
+    </section>
+
+    <section id="sheep" class="earth-band">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Meet the flock</p>
+          <h2>Meet our beautiful flock.</h2>
+          <p>Our flock includes two much-loved pet sheep breeds and one critically rare Australian heritage breed, each chosen for their temperament, beauty and unique qualities.</p>
+        </div>
+
+        <div class="cards">
+          <article id="valais-blacknose" class="card">
+            <div class="image-panel" aria-label="Valais Blacknose placeholder"></div>
+            <div class="card-content">
+              <h3>Valais Blacknose</h3>
+              <p class="muted">Known as the cutest sheep in the world, Valais Blacknose are loved for their striking black markings, woolly faces and gentle nature.</p>
+              <br />
+              <div style="margin-top:1rem; padding:1rem; background:linear-gradient(180deg, #f3eddf 0%, #dfe7d7 100%); border:1px solid var(--border); border-radius:16px;">
+                <p style="font-size:0.8rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--forest); margin-bottom:0.5rem;"><strong>Valais Breed-Up Program</strong></p>
+                <p class="muted">We are part of the Valais Blacknose breed-up journey in Australia, working toward preserving the distinctive appearance, temperament and fibre qualities of this remarkable breed.</p>
+              </div>
+              <br />
+              <a class="button" href="#contact">Enquire about Valais Blacknose</a>
+            </div>
+          </article>
+
+          <article id="babydolls" class="card">
+            <div class="image-panel" aria-label="Babydoll sheep placeholder"></div>
+            <div class="card-content">
+              <h3>Babydolls</h3>
+              <p class="muted">Often called the smiling teddy bear sheep, Babydolls are small, friendly and full of character. They are a wonderful choice for people looking for charming pet sheep.</p>
+              <br />
+              <a class="button" href="#contact">Enquire about Babydolls</a>
+            </div>
+          </article>
+
+          <article id="elliottdale" class="card">
+            <div class="image-panel" aria-label="Elliottdale sheep placeholder"></div>
+            <div class="card-content">
+              <h3>Elliottdale</h3>
+              <p class="muted">A very rare and critical Australian heritage breed, Elliottdales are valued for their history, resilience and distinctive wool qualities.</p>
+              <br />
+              <a class="button" href="#contact">Enquire about Elliottdales</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="care">
+      <div class="container grid-2">
+        <div>
+          <p class="eyebrow">Sheep care</p>
+          <h2>Calm handling, healthy sheep and practical care.</h2>
+          <p class="muted">Our sheep care approach is centred on welfare, nutrition, routine health checks and suitable homes for each animal. We want every sheep leaving our property to be matched with the right environment and owners who understand their care needs.</p>
+        </div>
+        <div class="feature-list">
+          <div id="general-care" class="feature">
+            <h3>General Care</h3>
+            <p class="muted">Routine observation, suitable nutrition, clean water, shade, shelter and calm handling as part of everyday flock care.</p>
+          </div>
+          <div id="preparing-for-sheep" class="feature">
+            <h3>Preparing for Your Sheep</h3>
+            <p class="muted">Guidance for fencing, shelter, pasture setup, companionship needs and what to prepare before bringing sheep home.</p>
+          </div>
+          <div id="lambing" class="feature">
+            <h3>Lambing</h3>
+            <p class="muted">Information about lambing season, early care, flock management and future lamb availability updates.</p>
+          </div>
+          <div id="vaccinations" class="feature">
+            <h3>Vaccinations</h3>
+            <p class="muted">Basic information about vaccination timing, record keeping and working with a local vet for the right program.</p>
+          </div>
+          <div id="sheep-health" class="feature">
+            <h3>Sheep Health</h3>
+            <p class="muted">Practical notes on parasite control, hoof care, body condition, flystrike awareness and when to seek veterinary advice.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlight-band">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Why Leondra's</p>
+          <h2>More than just beautiful sheep.</h2>
+          <p class="muted">We are focused on temperament, ethical care, breed preservation and helping owners find the right sheep for their property and lifestyle.</p>
+        </div>
+
+        <div class="highlight-grid">
+          <div class="highlight-card">
+            <h3>Rare & distinctive breeds</h3>
+            <p class="muted">From the iconic Valais Blacknose to critically rare Elliottdales, our flock is intentionally unique.</p>
+          </div>
+
+          <div class="highlight-card">
+            <h3>Raised with care</h3>
+            <p class="muted">Our sheep are handled calmly and raised with a focus on welfare, health and long-term wellbeing.</p>
+          </div>
+
+          <div class="highlight-card">
+            <h3>Future availability</h3>
+            <p class="muted">We plan limited breeding and may offer waitlists for future lambs, wool and breeding stock.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Frequently asked questions</p>
+          <h2>Common questions from future owners.</h2>
+        </div>
+
+        <div class="faq-list">
+          <details>
+            <summary>Are Valais Blacknose and Babydolls suitable as pet sheep?</summary>
+            <p>Yes. Both breeds are known for their friendly temperaments and are popular as companion and lifestyle sheep when properly cared for.</p>
+          </details>
+
+          <details>
+            <summary>Do sheep need to live with other sheep?</summary>
+            <p>Yes. Sheep are social animals and should not be kept alone. We recommend keeping at least two compatible sheep together.</p>
+          </details>
+
+          <details>
+            <summary>Will you offer lambs or breeding stock in the future?</summary>
+            <p>Yes. Future availability and waitlist information will be announced through the Farm Journal section and direct enquiries.</p>
+          </details>
+
+          <details>
+            <summary>Do you sell wool or fleece?</summary>
+            <p>We plan to offer selected raw fleece and wool products depending on seasonal availability and flock growth.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="wool">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Our Wool</p>
+          <h2>Natural fibre from distinctive breeds.</h2>
+          <p class="muted">As our flock grows, we look forward to exploring raw fleece, washed wool and future fibre products that celebrate the unique qualities of each breed.</p>
+        </div>
+
+        <div class="cards">
+          <article id="raw-fleece" class="card">
+            <div class="card-content">
+              <h3>Raw Fleece</h3>
+              <p class="muted">Future raw fleece availability for spinners, crafters and fibre enthusiasts.</p>
+            </div>
+          </article>
+
+          <article id="breed-fibre" class="card">
+            <div class="card-content">
+              <h3>Breed Fibre</h3>
+              <p class="muted">Each breed produces fibre with different texture, character and wool qualities.</p>
+            </div>
+          </article>
+
+          <article id="wool-journey" class="card">
+            <div class="card-content">
+              <h3>Wool Journey</h3>
+              <p class="muted">Follow our learning journey as we explore processing, preparation and fibre possibilities.</p>
+            </div>
+          </article>
+        </div>
+
+        <div id="future-products" class="highlight-card" style="margin-top:2rem;">
+          <h3>Future Products</h3>
+          <p class="muted">In the future we hope to explore washed fleece, spinning fibre, felted wool and small-batch wool products.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="registration">
+      <div class="container grid-2">
+        <div>
+          <p class="eyebrow">Registration</p>
+          <h2>Breed registration and flock records.</h2>
+          <p class="muted">This section can include registration details, association memberships, breeding records and any relevant documentation for buyers. Keep it simple and factual, especially for rare breed and stud enquiries.</p>
+        </div>
+        <div class="contact-box">
+          <h3>Memberships & Registrations</h3>
+          <p class="muted"><strong>Valais Blacknose:</strong> Registered with recognised Valais Blacknose breed organisations and breed-up programs in Australia.</p>
+          <br />
+          <p class="muted"><strong>Elliottdale:</strong> Member of the Rare Breeds Trust of Australia and ASBA.</p>
+          <br />
+          <p class="muted"><strong>Babydolls:</strong> Member of ASBA and BSAA.</p>
+          <br />
+          <p class="muted">Breed registrations, flock records and relevant documentation will continue to be updated as the flock develops.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Gallery</p>
+          <h2>Life with the flock.</h2>
+          <p class="muted">Replace these image placeholders with your own sheep, lamb, paddock and wool photos.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="image-panel" aria-label="Gallery placeholder 1"></div>
+          <div class="image-panel" aria-label="Gallery placeholder 2"></div>
+          <div class="image-panel" aria-label="Gallery placeholder 3"></div>
+          <div class="image-panel" aria-label="Gallery placeholder 4"></div>
+          <div class="image-panel" aria-label="Gallery placeholder 5"></div>
+          <div class="image-panel" aria-label="Gallery placeholder 6"></div>
+          <div class="image-panel" aria-label="Gallery placeholder 7"></div>
+          <div class="image-panel" aria-label="Gallery placeholder 8"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="journal" class="earth-band">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Farm Journal</p>
+          <h2>Farm updates, lambing season and life with the flock.</h2>
+          <p>This section works as a simple farm journal where you can share lambing updates, flock progress, paddock life, wool experiments and day-to-day moments from the farm.</p>
+        </div>
+        <div class="news-grid">
+          <article class="card">
+            <div class="card-content">
+              <p class="news-date">Coming soon</p>
+              <h3>Welcome to Leondra's Wolkaboutertjes</h3>
+              <p class="muted">Our first update will introduce the flock, our breeding plans and what visitors can expect from this website.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-content">
+              <p class="news-date">Coming soon</p>
+              <h3>Lambing updates</h3>
+              <p class="muted">Future lambing announcements, availability and waitlist information will be shared here.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-content">
+              <p class="news-date">Coming soon</p>
+              <h3>Wool & fleece</h3>
+              <p class="muted">Updates on raw fleece, wool products and breed-specific fleece qualities will be added here.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="earth-band">
+      <div class="container grid-2">
+        <div>
+          <p class="eyebrow">Contact us</p>
+          <h2>Interested in sheep, wool or future availability?</h2>
+          <p>Use this section for pet sheep enquiries, wool sales, breeding questions, waitlist interest or general farm updates.</p>
+          <br />
+          <p><strong>Email:</strong> info@leondras.com.au</p>
+          <p><strong>Instagram:</strong> @leondras</p>
+          <p><strong>Location:</strong> Eden Valley, South Australia</p>
+        </div>
+        <div class="contact-box">
+          <form name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
+            <input type="text" name="name" placeholder="Your name" required />
+            <input type="email" name="email" placeholder="Your email" required />
+            <input type="text" name="subject" placeholder="Enquiry type" />
+            <textarea name="message" placeholder="Your message" required></textarea>
+            <button class="button" type="submit">Send Enquiry</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Leondra's Wolkaboutertjes</strong> | @leondras</p>
+    <p>Eden Valley, South Australia</p>
+    <p>ABN: 33 476 234 694 | PIC: SB373618</p>
+    <p>&copy; 2026 Leondra's Wolkaboutertjes. Boutique sheep breeding, heritage breeds and naturally grown wool.</p>
+  </footer>
+</body>
+</html>
