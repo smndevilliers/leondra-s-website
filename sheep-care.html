@@ -5,54 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sheep Care | Leondra's Wolkaboutertjes</title>
   <meta name="description" content="Practical sheep care information including general care, preparing for sheep, lambing, vaccinations and sheep health." />
+
+  <meta property="og:title" content="Sheep Care | Leondra's Wolkaboutertjes" />
+  <meta property="og:description" content="Calm handling, healthy sheep and practical care from Eden Valley, South Australia." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://leondras.com.au/sheep-care.html" />
+  <meta property="og:site_name" content="Leondra's Wolkaboutertjes" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
+<a class="skip-link" href="#main">Skip to content</a>
 <header>
   <nav class="nav" aria-label="Main navigation">
-    <div class="nav-links">
-      <a href="about.html">About Us</a>
-      <div class="dropdown">
+    <a class="nav-brand" href="index.html">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="1.4" opacity="0.35"/>
+        <path d="M 74 50 A 24 24 0 1 1 26 50 A 15 15 0 1 1 56 50 A 9 9 0 1 1 42 50 A 5 5 0 1 1 52 50" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>Leondra's Wolkaboutertjes</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+    <ul class="nav-links" id="primary-menu" role="list">
+      <li><a href="about.html">About</a></li>
+      <li class="dropdown">
         <a href="flock.html">Meet the Flock</a>
-        <div class="dropdown-menu">
-          <a href="flock.html#valais-blacknose">Valais Blacknose</a>
-          <a href="flock.html#babydolls">Babydolls</a>
-          <a href="flock.html#elliottdale">Elliottdale</a>
-        </div>
-      </div>
-      <div class="dropdown">
+        <ul class="dropdown-menu" role="list">
+          <li><a href="flock.html#valais-blacknose">Valais Blacknose</a></li>
+          <li><a href="flock.html#babydolls">Babydolls</a></li>
+          <li><a href="flock.html#elliottdale">Elliottdale</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
         <a href="sheep-care.html">Sheep Care</a>
-        <div class="dropdown-menu">
-          <a href="sheep-care.html#general-care">General Care</a>
-          <a href="sheep-care.html#preparing-for-sheep">Preparing for Your Sheep</a>
-          <a href="sheep-care.html#lambing">Lambing</a>
-          <a href="sheep-care.html#vaccinations">Vaccinations</a>
-          <a href="sheep-care.html#sheep-health">Sheep Health</a>
-          <a href="sheep-care.html#faq">FAQ</a>
-        </div>
-      </div>
-      <div class="dropdown">
+        <ul class="dropdown-menu" role="list">
+          <li><a href="sheep-care.html#general-care">General Care</a></li>
+          <li><a href="sheep-care.html#preparing-for-sheep">Preparing for Your Sheep</a></li>
+          <li><a href="sheep-care.html#lambing">Lambing</a></li>
+          <li><a href="sheep-care.html#vaccinations">Vaccinations</a></li>
+          <li><a href="sheep-care.html#sheep-health">Sheep Health</a></li>
+          <li><a href="sheep-care.html#faq">FAQ</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
         <a href="wool.html">Our Wool</a>
-        <div class="dropdown-menu">
-          <a href="wool.html#raw-fleece">Raw Fleece</a>
-          <a href="wool.html#breed-fibre">Breed Fibre</a>
-          <a href="wool.html#wool-journey">Wool Journey</a>
-          <a href="wool.html#future-products">Future Products</a>
-        </div>
-      </div>
-      <a href="registration.html">Registration</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="journal.html">Farm Journal</a>
-      <a href="contact.html">Contact Us</a>
-    </div>
+        <ul class="dropdown-menu" role="list">
+          <li><a href="wool.html#raw-fleece">Raw Fleece</a></li>
+          <li><a href="wool.html#breed-fibre">Breed Fibre</a></li>
+          <li><a href="wool.html#wool-journey">Wool Journey</a></li>
+          <li><a href="wool.html#future-products">Future Products</a></li>
+        </ul>
+      </li>
+      <li><a href="registration.html">Registration</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="journal.html">Journal</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </nav>
 </header>
 
-
-<main>
+<main id="main">
   <section class="page-hero">
-    <p class="eyebrow">Sheep care</p>
+    <span class="eyebrow">Sheep care</span>
     <h1>Calm handling, healthy sheep and practical care.</h1>
     <p>Care information for future owners, including general care, preparation, lambing, vaccinations and flock health.</p>
   </section>
@@ -91,7 +113,7 @@
   <section id="faq" class="highlight-band">
     <div class="container">
       <div class="section-heading">
-        <p class="eyebrow">Frequently asked questions</p>
+        <span class="eyebrow">Frequently asked questions</span>
         <h2>Common questions from future owners.</h2>
       </div>
       <div class="faq-list">
@@ -116,13 +138,21 @@
   </section>
 </main>
 
-
 <footer>
-  <p><strong>Leondra's Wolkaboutertjes</strong> | @leondras</p>
+  <p class="footer-brand">Leondra's Wolkaboutertjes</p>
+  <a class="footer-social" href="https://instagram.com/leondras" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+      <rect x="3" y="3" width="18" height="18" rx="5"/>
+      <circle cx="12" cy="12" r="4"/>
+      <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+    </svg>
+    <span>@leondras</span>
+  </a>
   <p>Eden Valley, South Australia</p>
-  <p>ABN: 33 476 234 694 | PIC: SB373618</p>
+  <p>ABN: 33 476 234 694 &nbsp;|&nbsp; PIC: SB373618</p>
   <p>&copy; 2026 Leondra's Wolkaboutertjes. Boutique sheep breeding, heritage breeds and naturally grown wool.</p>
 </footer>
+<script src="script.js" defer></script>
 
 </body>
 </html>

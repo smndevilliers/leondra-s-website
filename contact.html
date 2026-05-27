@@ -5,72 +5,129 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us | Leondra's Wolkaboutertjes</title>
   <meta name="description" content="Contact Leondra's Wolkaboutertjes for sheep, wool, breeding and future availability enquiries." />
+
+  <meta property="og:title" content="Contact Us | Leondra's Wolkaboutertjes" />
+  <meta property="og:description" content="Get in touch about sheep, wool, breeding or future availability." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://leondras.com.au/contact.html" />
+  <meta property="og:site_name" content="Leondra's Wolkaboutertjes" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
+<a class="skip-link" href="#main">Skip to content</a>
 <header>
   <nav class="nav" aria-label="Main navigation">
-    <div class="nav-links">
-      <a href="about.html">About Us</a>
-      <div class="dropdown">
+    <a class="nav-brand" href="index.html">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="1.4" opacity="0.35"/>
+        <path d="M 74 50 A 24 24 0 1 1 26 50 A 15 15 0 1 1 56 50 A 9 9 0 1 1 42 50 A 5 5 0 1 1 52 50" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>Leondra's Wolkaboutertjes</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+    <ul class="nav-links" id="primary-menu" role="list">
+      <li><a href="about.html">About</a></li>
+      <li class="dropdown">
         <a href="flock.html">Meet the Flock</a>
-        <div class="dropdown-menu">
-          <a href="flock.html#valais-blacknose">Valais Blacknose</a>
-          <a href="flock.html#babydolls">Babydolls</a>
-          <a href="flock.html#elliottdale">Elliottdale</a>
-        </div>
-      </div>
-      <div class="dropdown">
+        <ul class="dropdown-menu" role="list">
+          <li><a href="flock.html#valais-blacknose">Valais Blacknose</a></li>
+          <li><a href="flock.html#babydolls">Babydolls</a></li>
+          <li><a href="flock.html#elliottdale">Elliottdale</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
         <a href="sheep-care.html">Sheep Care</a>
-        <div class="dropdown-menu">
-          <a href="sheep-care.html#general-care">General Care</a>
-          <a href="sheep-care.html#preparing-for-sheep">Preparing for Your Sheep</a>
-          <a href="sheep-care.html#lambing">Lambing</a>
-          <a href="sheep-care.html#vaccinations">Vaccinations</a>
-          <a href="sheep-care.html#sheep-health">Sheep Health</a>
-          <a href="sheep-care.html#faq">FAQ</a>
-        </div>
-      </div>
-      <div class="dropdown">
+        <ul class="dropdown-menu" role="list">
+          <li><a href="sheep-care.html#general-care">General Care</a></li>
+          <li><a href="sheep-care.html#preparing-for-sheep">Preparing for Your Sheep</a></li>
+          <li><a href="sheep-care.html#lambing">Lambing</a></li>
+          <li><a href="sheep-care.html#vaccinations">Vaccinations</a></li>
+          <li><a href="sheep-care.html#sheep-health">Sheep Health</a></li>
+          <li><a href="sheep-care.html#faq">FAQ</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
         <a href="wool.html">Our Wool</a>
-        <div class="dropdown-menu">
-          <a href="wool.html#raw-fleece">Raw Fleece</a>
-          <a href="wool.html#breed-fibre">Breed Fibre</a>
-          <a href="wool.html#wool-journey">Wool Journey</a>
-          <a href="wool.html#future-products">Future Products</a>
-        </div>
-      </div>
-      <a href="registration.html">Registration</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="journal.html">Farm Journal</a>
-      <a href="contact.html">Contact Us</a>
-    </div>
+        <ul class="dropdown-menu" role="list">
+          <li><a href="wool.html#raw-fleece">Raw Fleece</a></li>
+          <li><a href="wool.html#breed-fibre">Breed Fibre</a></li>
+          <li><a href="wool.html#wool-journey">Wool Journey</a></li>
+          <li><a href="wool.html#future-products">Future Products</a></li>
+        </ul>
+      </li>
+      <li><a href="registration.html">Registration</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="journal.html">Journal</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </nav>
 </header>
 
-
-<main>
+<main id="main">
   <section class="page-hero">
-    <p class="eyebrow">Contact us</p>
+    <span class="eyebrow">Contact us</span>
     <h1>Interested in sheep, wool or future availability?</h1>
-    <p>Contact us for pet sheep enquiries, wool sales, breeding questions, waitlist interest or general farm updates.</p>
+    <p>Get in touch for pet sheep enquiries, wool sales, breeding questions or general farm updates.</p>
   </section>
 
   <section>
     <div class="container grid-2">
       <div>
         <h2>Make an enquiry</h2>
-        <p class="muted"><strong>Email:</strong> info@leondras.com.au</p>
-        <p class="muted"><strong>Instagram:</strong> @leondras</p>
-        <p class="muted"><strong>Location:</strong> Eden Valley, South Australia</p>
+        <p class="muted">We are happy to answer questions about our breeds, sheep care, future lamb availability or wool. We aim to respond within a few days.</p>
+        <div class="contact-meta">
+          <p class="muted"><strong>Email:</strong> <a href="mailto:info@leondras.com.au">info@leondras.com.au</a></p>
+          <p class="muted"><strong>Instagram:</strong> <a href="https://instagram.com/leondras" target="_blank" rel="noopener noreferrer">@leondras</a></p>
+          <p class="muted"><strong>Location:</strong> Eden Valley, South Australia</p>
+        </div>
       </div>
+
       <div class="contact-box">
-        <form name="contact" method="POST">
-          <input type="text" name="name" placeholder="Your name" required />
-          <input type="email" name="email" placeholder="Your email" required />
-          <input type="text" name="subject" placeholder="Enquiry type" />
-          <textarea name="message" placeholder="Your message" required></textarea>
+        <form id="contact-form" novalidate>
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE" />
+          <input type="hidden" name="subject" value="New enquiry from leondras.com.au" />
+          <input type="hidden" name="from_name" value="Leondra's Wolkaboutertjes website" />
+          <input type="checkbox" name="botcheck" class="sr-only" tabindex="-1" autocomplete="off" />
+
+          <div class="form-field">
+            <label for="name">Your name</label>
+            <input id="name" type="text" name="name" required autocomplete="name" />
+          </div>
+
+          <div class="form-field">
+            <label for="email">Your email</label>
+            <input id="email" type="email" name="email" required autocomplete="email" />
+          </div>
+
+          <div class="form-field">
+            <label for="enquiry-type">Enquiry type</label>
+            <select id="enquiry-type" name="enquiry_type">
+              <option value="">Please select</option>
+              <option value="Valais Blacknose">Valais Blacknose</option>
+              <option value="Babydolls">Babydolls</option>
+              <option value="Elliottdale">Elliottdale</option>
+              <option value="Wool or fleece">Wool or fleece</option>
+              <option value="Sheep care question">Sheep care question</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Your message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+
+          <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+
           <button class="button" type="submit">Send Enquiry</button>
         </form>
       </div>
@@ -78,13 +135,21 @@
   </section>
 </main>
 
-
 <footer>
-  <p><strong>Leondra's Wolkaboutertjes</strong> | @leondras</p>
+  <p class="footer-brand">Leondra's Wolkaboutertjes</p>
+  <a class="footer-social" href="https://instagram.com/leondras" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+      <rect x="3" y="3" width="18" height="18" rx="5"/>
+      <circle cx="12" cy="12" r="4"/>
+      <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+    </svg>
+    <span>@leondras</span>
+  </a>
   <p>Eden Valley, South Australia</p>
-  <p>ABN: 33 476 234 694 | PIC: SB373618</p>
+  <p>ABN: 33 476 234 694 &nbsp;|&nbsp; PIC: SB373618</p>
   <p>&copy; 2026 Leondra's Wolkaboutertjes. Boutique sheep breeding, heritage breeds and naturally grown wool.</p>
 </footer>
+<script src="script.js" defer></script>
 
 </body>
 </html>
