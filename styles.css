@@ -497,6 +497,7 @@ p + p { margin-top: 1rem; }
 
 .image-panel.tall { height: 360px; }
 .image-panel.wide { height: 320px; }
+.image-panel.short { height: 220px; }
 
 /* ==========================================================================
    Highlight band and card
@@ -903,4 +904,34 @@ footer p:last-child { margin-bottom: 0; opacity: 0.65; font-size: 0.85rem; margi
   .nav-brand svg { width: 28px; height: 28px; }
   .contact-box { padding: 1.5rem; }
   .fact-list { max-width: 100%; }
+}
+
+/* ==========================================================================
+   Real photo class (overrides placeholder behaviour)
+   ========================================================================== */
+
+.photo-panel {
+  width: 100%;
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 22px;
+  position: relative;
+  overflow: hidden;
+}
+
+.photo-panel.tall { height: 420px; }
+.photo-panel.wide { height: 360px; }
+.photo-panel.short { height: 220px; }
+
+@media (max-width: 960px) {
+  .photo-panel.tall,
+  .photo-panel.wide { height: 320px; }
+}
+
+@media (max-width: 520px) {
+  .photo-panel.tall,
+  .photo-panel.wide { height: 260px; }
+  .photo-panel { height: 220px; }
 }

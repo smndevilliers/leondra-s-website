@@ -1,68 +1,68 @@
-# Site Update v3 - Deployment Notes
+# Site Update v4 - Photos and Trims (flat structure)
 
-## What's changed from v2
+## Important: this version has no assets folder
 
-**Three new breed pages:**
-- `valais-blacknose.html` (includes the breed-up explainer)
-- `babydolls.html`
-- `elliottdale.html`
+All files sit at the root level of the repo, matching your existing GitHub setup. Just drag all files into the repo root and upload.
 
-**flock.html simplified** to an overview with three cards linking to the new breed pages. Visit & Buy section removed.
+## What's new
 
-**sheep-care.html simplified.** Day-to-day section removed. Before-You-Get-Sheep checklist and FAQs remain.
+**Real photos!**
+- Nutmeg and Basil (Valais Blacknose lambs) on the Valais Blacknose page and Flock overview card
+- Sage (Babydoll) on the Babydolls page, Flock overview card, and About page
+- Elliottdale page still uses the placeholder (no photo yet)
 
-**journal.html restored** to the three-column card layout for upcoming posts. The wool block is gone; Instagram callout takes its place.
+**Names introduced** throughout: Nutmeg, Basil, and Sage are now named in the copy where it fits naturally.
 
-**Centered alignment** applied throughout. All sections, headings, eyebrows, and body copy centered by default. Forms and FAQs remain left-aligned for usability (they need to be readable line by line).
+**Trims from the buyer review:**
+- "Visits are by appointment" line removed from Home and About (kept only on Contact page and in the Sheep Care FAQ)
+- "Honest about everything" highlight card removed from About (kept the other two)
+- Journal page now shows one honest "first post coming soon" card instead of three
 
-**Em-dash list style** applied to all `.fact-list` elements, replacing the olive dots. Clay-coloured em-dash markers, max-width 540px centered, with the list itself left-aligned for readability.
+## Files to upload
 
-**Dropdown nav** updated to point to the three new breed pages (Valais Blacknose, Babydolls, Elliottdale).
+**New image files (add to repo root):**
+- nutmeg-basil.jpg (326KB, hero size)
+- nutmeg-basil-card.jpg (130KB, card size)
+- sage.jpg (526KB, hero size)
+- sage-card.jpg (210KB, card size)
 
-## File summary
-
-**Main pages (replace existing):**
+**Updated HTML pages (replace existing):**
 - index.html
 - about.html
-- flock.html (now an overview only)
-- sheep-care.html
-- journal.html (column layout restored)
-- memberships.html
-- contact.html
-- styles.css
-
-**New files (add to repo):**
+- flock.html
 - valais-blacknose.html
 - babydolls.html
+- journal.html
+
+**Updated CSS:**
+- styles.css
+
+**Unchanged (no need to re-upload but included for completeness):**
 - elliottdale.html
-
-**Redirect stubs (no changes if already deployed):**
-- wool.html → journal.html
-- registration.html → memberships.html
-- gallery.html → journal.html
-
-**Unchanged (already in repo):**
+- sheep-care.html
+- memberships.html
+- contact.html
 - script.js
-- assets/logo.svg
-- assets/favicon.svg
+- logo.svg, favicon.svg
+- wool.html, registration.html, gallery.html (redirect stubs)
 
-## One critical step before deploying
+## Heads up
 
-`contact.html` has been rebuilt and the Web3Forms access key is back to the placeholder. Before you commit, replace `YOUR_WEB3FORMS_ACCESS_KEY_HERE` with your real key. You can copy it from the currently-live contact.html in GitHub.
+I noticed in your GitHub repo that script.js, logo.svg and favicon.svg don't appear to be in the file list. These should already be in your repo from earlier deploys. If they're missing for some reason, this package includes them too, so you can upload them all together.
 
-## Test after deploying
+## Critical reminder
 
-1. Click through the nav, including the Flock dropdown with the three breed pages
-2. Confirm the alignment looks right on each page
-3. Check the journal page shows three columns on desktop, stacks on mobile
-4. Submit a test enquiry through the contact form
-5. Check on mobile: hamburger menu, breed sub-items, all pages stack cleanly
+contact.html in this package has the placeholder for the Web3Forms access key reset. If you're uploading contact.html, paste your key back in before committing. If you're skipping contact.html (it's unchanged anyway), no action needed.
 
-## What didn't change
+## Deployment
 
-- Web3Forms wiring (just needs the access key pasted back in)
-- Cloudflare Access setup
-- Email Routing
-- Colour palette and typography
-- Logo placeholder (still the wool curl)
-- Photo placeholders (still "Photo coming soon")
+Same as before: drag everything into GitHub repo root, commit, push. Cloudflare redeploys automatically.
+
+## After deploying
+
+Hard refresh (Ctrl+Shift+R) on each page and check:
+- Flock overview: two real photos, one placeholder
+- Valais page: Nutmeg and Basil greet you, caption underneath
+- Babydolls page: Sage greets you, caption underneath
+- About: Sage photo sits below the story, only two highlight cards remain
+- Journal: one card instead of three
